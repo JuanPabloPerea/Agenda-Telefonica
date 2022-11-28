@@ -11,7 +11,10 @@ public class AgendaTelefonica {
     /*Integrantes: 20162020074 Juan Pablo Perea Hernandez
                     20182020151 Kevin Nicolas Sierra Gonzales
                     20202020003 Ludwind Rico Rodriguez*/
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        
+        long inicio = System.currentTimeMillis();
+        Thread.sleep(2000);
         ArbolAvl arbol = new ArbolAvl();
         /*
         Ejemplo de insercion de datos en el arbol
@@ -28,6 +31,10 @@ public class AgendaTelefonica {
         arbol.mostrarArbolAvl();
         arbol.eliminar(3134);
         arbol.mostrarArbolAvl();
+        
+        long fin = System.currentTimeMillis();
+        double tiempoEje = (double)((fin - inicio)/1000);
+        System.out.println("el timepo de ejecucion fue: "+tiempoEje+"segundos");
     }
     
 }
