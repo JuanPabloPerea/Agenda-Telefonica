@@ -11,6 +11,27 @@ public class ArbolAvl {
         root = null;
     }
     
+    /* Buscar un Numero */
+    public void buscar(int numTelefono) {
+        root = buscarNodo(root, numTelefono);
+    }
+
+    public NodoAvl buscarNodo(NodoAvl nodoActual, int numTelefono) {
+        if (nodoActual != null) {
+            if (numTelefono == nodoActual.numTelefono) {
+                System.out.println("esta el numero");
+                return nodoActual;
+            } else if (numTelefono < nodoActual.numTelefono) {
+                buscarNodo(nodoActual.izq, numTelefono);
+            } else if (numTelefono > nodoActual.numTelefono) {
+                buscarNodo(nodoActual.der, numTelefono);
+            }
+        }else{
+            System.out.println("el numero no esta");
+        }
+        return nodoActual;
+    }
+    
 /* Insercion de datos */
     
     public void insert(int numTelefono, String nombre) {
