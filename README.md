@@ -6,4 +6,5 @@ Integrantes:
 - 20182020151 Kevin Nicolas Sierra Gonzales
 - 20202020003 Ludwind Rico Rodriguez
 
-Agenda telefonica argoanizada en un arbol avl junto y en un arbol rojo 
+Agenda telefonica argoanizada en un arbol avl junto y en un arbol rojo
+el atributo sobre el cual se organiza es el numero de telefono
